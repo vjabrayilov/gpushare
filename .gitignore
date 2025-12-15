@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.venv/
+.env
+.env.*
+pip-wheel-metadata/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# OS
+.DS_Store
+
+# Project Specific
+runs/
+*.csv
+
+# LaTeX / Report Artifacts
+report/*.pdf
+report/*.aux
+report/*.log
+report/*.out
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz
+report/final_report_page-*.png

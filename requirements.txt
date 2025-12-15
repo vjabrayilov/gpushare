@@ -1,0 +1,9 @@
+pydantic>=2.5
+pyyaml>=6.0
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+aiohttp>=3.9
+tqdm>=4.66
+pynvml>=11.5
+requests>=2.31
