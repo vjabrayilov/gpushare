@@ -1,8 +1,7 @@
 # GPU Sharing for LLM Serving: Survey + Mini-Benchmarks (MPS and MIG-like emulation)
 
-## A description of the project
 
-Features:
+## Features:
 - **Serve an LLM** via vLLM’s OpenAI-compatible API server.
 - **Generate load** (async HTTP) and measure throughput (tokens/s) and tail latency (P50/P95/P99).
 - **Baseline vs CUDA MPS**: toggle MPS around runs.
