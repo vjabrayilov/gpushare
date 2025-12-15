@@ -6,7 +6,7 @@
 \usepackage{amsmath}
 \usepackage{hyperref}
 
-\title{GPU Sharing for LLM Serving: Survey and Mini-Benchmarks on AWS \texttt{g6.8xlarge} (NVIDIA L4) with CUDA MPS and MIG-like Emulation}
+\title{GPU Sharing for LLM Serving: Survey and Mini-Benchmarks}
 
 \author{
 \IEEEauthorblockN{Vahab Jabrayilov}
@@ -61,7 +61,7 @@ The primary serving metrics are throughput and tail latency. Throughput is repor
 \subsection{Results and interpretation}
 Each trial produces a JSON summary with throughput and latency percentiles, a GPU telemetry CSV, and a server log. These artifacts are stored under \texttt{runs/} to provide filesystem-based experiment tracking. The repository includes an \texttt{runs/example} directory containing generated run artifacts that demonstrate reporting format and validate the end-to-end analysis pipeline; the same scripts produce final figures once real runs are executed on the target instance.
 
-Table~\ref{tab:example_summary} illustrates how metrics are summarized across sharing modes and concurrency levels. Figures~\ref{fig:throughput} and \ref{fig:p99} show the corresponding throughput scaling and tail latency trends produced by the analysis script. The qualitative behavior that should be expected in real measurements is that throughput increases with concurrency as batching opportunities improve and then saturates when the GPU becomes the limiting resource. MPS can improve throughput when multi-process overlap reduces idle gaps, but it can also amplify contention, increasing tail latency as concurrency grows. The MIG-like emulation tends to reduce peak throughput because resources are effectively subdivided, while potentially improving isolation between tenants by constraining each server's footprint.
+Table~\ref{tab:results} illustrates how metrics are summarized across sharing modes and concurrency levels. Figures~\ref{fig:throughput} and \ref{fig:p99} show the corresponding throughput scaling and tail latency trends produced by the analysis script. The qualitative behavior that should be expected in real measurements is that throughput increases with concurrency as batching opportunities improve and then saturates when the GPU becomes the limiting resource. MPS can improve throughput when multi-process overlap reduces idle gaps, but it can also amplify contention, increasing tail latency as concurrency grows. The MIG-like emulation tends to reduce peak throughput because resources are effectively subdivided, while potentially improving isolation between tenants by constraining each server's footprint.
 
 \input{results_table.tex}
 
