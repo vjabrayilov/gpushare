@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Example summary produced by the repository analysis pipeline. Values are generated to demonstrate reporting format and should be replaced with measured artifacts collected on the target platform.}
+\label{tab:example_summary}
+\begin{tabular}{lrrr}
+\toprule
+Scenario & Concurrency & Throughput (tokens/s) & P99 latency (s) \\
+\midrule
+baseline & 8 & 4169 & 1.72 \\
+mig\_emulation & 8 & 3406 & 1.57 \\
+mps & 8 & 4622 & 1.68 \\
+baseline & 16 & 5008 & 3.17 \\
+mig\_emulation & 16 & 4265 & 2.31 \\
+mps & 16 & 5789 & 2.77 \\
+baseline & 24 & 5168 & 4.60 \\
+mig\_emulation & 24 & 4536 & 3.22 \\
+mps & 24 & 6018 & 4.22 \\
+\bottomrule
+\end{tabular}
+\end{table}
