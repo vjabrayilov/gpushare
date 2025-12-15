@@ -25,7 +25,7 @@
 
 ### Environment Setup
 
-**Option A: pip (recommended)**
+**pip (recommended)**
 
 ```bash
 python -m venv .venv
