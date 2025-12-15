@@ -1,0 +1,20 @@
+{
+  "completion_tokens": 28600,
+  "concurrency": 24,
+  "experiment": "example",
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "mps": false,
+  "n_requests": 200,
+  "p50_s": 0.731609702050082,
+  "p95_s": 1.8835218144267811,
+  "p99_s": 4.595108005924412,
+  "prompt_tokens": 15399,
+  "req_per_s": 23.458566276621383,
+  "scenario": "baseline",
+  "server": {},
+  "timestamp": "example",
+  "tok_per_s": 5160.884580856704,
+  "total_tokens": 44000,
+  "wall_time_s": 8.52567022390104,
+  "workload": {}
+}

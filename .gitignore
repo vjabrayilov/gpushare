@@ -18,10 +18,6 @@ htmlcov/
 # OS
 .DS_Store
 
-# Project Specific
-runs/
-*.csv
-
 # LaTeX / Report Artifacts
 report/*.aux
 report/*.log
