@@ -1,0 +1,27 @@
+experiment:
+  name: mps
+  out_dir: runs
+  use_mps: true
+  mig_emulation: false
+  warmup_requests: 20
+
+server:
+  engine: vllm
+  model: mistralai/Mistral-7B-Instruct-v0.2
+  host: 127.0.0.1
+  port: 8000
+  dtype: float16
+  max_model_len: 2048
+  gpu_memory_utilization: 0.90
+  enforce_eager: false
+  quantization: null
+  extra_args: null
+
+workload:
+  prompts_path: data/prompts.jsonl
+  n_requests: 200
+  concurrency: 8
+  max_tokens: 256
+  temperature: 0.0
+  top_p: 1.0
+  seed: 0

@@ -1,0 +1,6 @@
+{"id": "p1", "prompt": "Explain in two sentences what CUDA MPS does and when it helps."}
+{"id": "p2", "prompt": "Write a short email requesting access to a GPU with MIG support for a class project."}
+{"id": "p3", "prompt": "Summarize the trade-offs between MIG and MPS for multi-tenant inference."}
+{"id": "p4", "prompt": "Given a GPU with 24GB memory, what factors determine maximum batch size for LLM serving?"}
+{"id": "p5", "prompt": "Describe PagedAttention at a high level and why it improves KV-cache utilization."}
+{"id": "p6", "prompt": "Provide three ideas to reduce tail latency in an LLM inference server."}
